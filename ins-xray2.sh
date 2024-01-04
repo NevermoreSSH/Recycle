@@ -140,7 +140,7 @@ cat> /usr/local/etc/xray/config.json << END
                         "xver": 1
                     },
                     {
-                        "path": "/vmess", # // VLESS WS TLS
+                        "path": "", # // VLESS WS TLS
                         "dest": 1213,
                         "xver": 1
                     },
@@ -615,7 +615,7 @@ cat> /usr/local/etc/xray/vmess.json << END
                 "security": "none",
                 "wsSettings": {
                     "acceptProxyProtocol": true,
-                    "path": "/vmess"
+                    "path": ""
                 }
             }
         }
@@ -725,7 +725,7 @@ cat> /usr/local/etc/xray/vmessnone.json << END
          "network": "ws",
             "wsSettings": {
               "acceptProxyProtocol": true,
-                "path": "/vmess"
+                "path": ""
                 }
             }
         }
@@ -1063,7 +1063,7 @@ cat> /usr/local/etc/xray/none.json << END
             "xver": 1
           },
           {
-            "path": "/vmess", # // VMESS NONE
+            "path": "", # // VMESS NONE
             "dest": 1302,
             "xver": 1
           },
