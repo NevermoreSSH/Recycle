@@ -77,7 +77,7 @@ booster2="vless://${uuid}@${sts}104.18.203.232:$none?type=ws&encryption=none&sec
 booster3="vless://${uuid}@${sts}104.18.203.232:$none?type=ws&encryption=none&security=none&host=www.speedtest.net.${domain}&path=/vless#tunetalkBOOSTER2_${user}_${exp}"
 pokemon="vless://${uuid}@${domain}:443?type=ws&encryption=none&security=tls&host=www.pokemon.com&path=/vless&allowInsecure=1&sni=www.pokemon.com#digiPOKEMON_${user}_${exp}"
 uni1="vless://${uuid}@cdn.who.int:443?type=ws&encryption=none&security=tls&host=${domain}&path=/vless&allowInsecure=1&sni=${domain}#UnifiNoSub_${user}_${exp}"
-maxis1='vless://${uuid}@zn4oa6cok9jkhgn6c-maxiscx.siteintercept.qualtrics.com:80?type=ws&encryption=none&security=none&host=zn4oa6cok9jkhgn6c-maxiscx.siteintercept.qualtrics.com.${domain}&path=/vless#maxisnosub_${user}_${exp}"
+maxis1="vless://${uuid}@zn4oa6cok9jkhgn6c-maxiscx.siteintercept.qualtrics.com:80?type=ws&encryption=none&security=none&host=zn4oa6cok9jkhgn6c-maxiscx.siteintercept.qualtrics.com.${domain}&path=/vless#maxisnosub_${user}_${exp}"
 
 clear
 echo -e ""
@@ -122,7 +122,7 @@ echo -e "Link digiPOKEMON      : ${pokemon}"
 echo -e "═══════════════════"
 echo -e "Link MaxisNoSub   : ${maxis1}"
 echo -e "═══════════════════"
-echo -e "Link UnifiNoSub   : ${maxis1}"
+echo -e "Link UnifiNoSub   : ${uni1}"
 echo -e "═══════════════════"
 echo -e "YAML WS TLS       : http://${MYIP2}:81/$user-VLESSTLS.yaml"
 echo -e "═══════════════════"
