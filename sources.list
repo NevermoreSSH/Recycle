@@ -1,4 +1,10 @@
-# latest debian10 apt
-deb http://archive.debian.org/debian buster main contrib non-free
-deb http://archive.debian.org/debian buster-updates main contrib non-free
-deb http://archive.debian.org/debian-security buster/updates main contrib non-free
+# Pastikan dependencies untuk build ada
+sudo apt update
+sudo apt install build-essential dkms linux-headers-$(uname -r) -y
+
+# Mount CD (kalau tak auto mount)
+sudo mkdir -p /mnt/cdrom
+sudo mount /dev/cdrom /mnt/cdrom
+
+# Jalankan installer
+sudo sh /mnt/cdrom/VBoxLinuxAdditions.run
